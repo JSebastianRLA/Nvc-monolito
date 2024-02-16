@@ -547,7 +547,7 @@ class SystemGroupStatusWidget extends Widget
                 $url .= '&ag_group='.$group['g'];
 
                 if ($show_normal === true) {
-                    $outputLine = '<div class="bg_82B92E">';
+                    $outputLine = '<div class="bg_0B579B">';
                     $outputLine .= '<span>';
                     $outputLine .= '<a title="'.__('Modules in normal status');
                     $outputLine .= '" class="group_view_data"';

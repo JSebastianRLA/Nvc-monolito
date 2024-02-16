@@ -142,7 +142,7 @@ li#li_margin_support {
 div.login_page {
   /* background-color: rgba(0, 0, 0, 0.8); */
   /* background-color: rgba(255, 255, 255, 0.2); */
-  background-color: var(--login-background-color);
+  background: linear-gradient(161deg, #fff 0%, rgba(107, 136, 161, 0.85) 100%);
   width: 40vw;
   min-width: 300px;
   height: 100vh;
@@ -151,6 +151,8 @@ div.login_page {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* @media only screen and (max-width: 1280px) {
@@ -167,7 +169,7 @@ div.login_logo_icon {
 div.login_logo_icon img {
   margin: 0 auto;
   max-height: 150px;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 div.login_double_auth_code,
@@ -415,6 +417,10 @@ div.icon_message_alert {
 
 div.icon_message_alert img {
   width: 85px;
+  scale: 1.5;
+  position: absolute;
+  left: 6%;
+  top: 18%;
 }
 
 div.content_message_alert {
@@ -445,8 +451,8 @@ div.button_message_alert input {
   float: right;
   width: 87px;
   height: 33px;
-  color: #82b92e;
-  border: 1px solid #82b92e;
+  color: #0B579B;
+  border: 1px solid #0B579B;
   font-weight: bold;
   margin-right: 20px;
   margin-top: 20px;
@@ -490,8 +496,8 @@ div.button_message_alert_form input {
   float: right;
   width: 87px;
   height: 33px;
-  color: #82b92e;
-  border: 1px solid #82b92e;
+  color: #0B579B;
+  border: 1px solid #0B579B;
   font-weight: bold;
   font-size: 10pt;
   margin-right: 25px;
@@ -658,7 +664,7 @@ div.button_message_alert_form input {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: linear-gradient(#82b92e, #c1ccdc);
+  background: linear-gradient(#0B579B, #c1ccdc);
   animation: animate 1.2s linear infinite;
   margin: auto;
   margin-bottom: 40px;
@@ -668,7 +674,7 @@ div.button_message_alert_form input {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  background: linear-gradient(#82b92e, #c1ccdc);
+  background: linear-gradient(#0B579B, #c1ccdc);
 }
 .loader span:nth-child(1) {
   filter: blur(4px);
@@ -845,7 +851,7 @@ div.white-theme input:-webkit-autofill:active {
   -webkit-text-fill-color: #343434;
   border: 0px;
   border-bottom: 0px;
-  border-radius: 3px;
+  border-radius: 15px;
   width: 100%;
   height: 40px;
   font-size: 12pt;

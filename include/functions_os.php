@@ -306,7 +306,9 @@ function os_transform_url_icon($url_icon)
         case 'so_mainframe.png':
             $return .= 'mainframe@os.svg';
         break;
-
+        case 'so_f5.png':
+            $return .= 'f5@os.svg';
+        break;
         case 'so_hpux.png':
         case 'server_hpux.png':
             $return .= 'HP@os.svg';

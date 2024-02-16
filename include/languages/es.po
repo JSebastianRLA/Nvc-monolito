@@ -13189,7 +13189,7 @@ msgstr "Gestión de módulos"
 
 #: ../../enterprise/meta/include/functions_ui_meta.php:53
 #, php-format
-msgid "%s - the Flexible Monitoring System"
+msgid "%s - Visibility and monitoring platform"
 msgstr "%s - Flexible Monitoring System"
 
 #: ../../enterprise/meta/include/functions_ui_meta.php:1010
@@ -13255,7 +13255,7 @@ msgstr "Restablecer la contraseña"
 #: ../../include/functions_config.php:2698
 #: ../../include/functions_config.php:2750 ../../general/login_page.php:527
 #: ../../general/login_page.php:530
-msgid "ONE TOOL TO RULE THEM ALL"
+msgid "VISIBILITY AND MONITORING PLATFORM"
 msgstr "UNA HERRAMIENTA PARA GOBERNARLOS A TODOS"
 
 #: ../../enterprise/meta/include/reset_pass.php:147
@@ -39216,7 +39216,7 @@ msgid "Author"
 msgstr "Autor"
 
 #: ../../godmode/setup/news.php:364 ../../general/logon_ok.php:216
-msgid "Welcome to Pandora FMS Console"
+msgid "Ngeek visibility center NVC Console"
 msgstr "Bienvenido/a a la Consola de Pandora FMS"
 
 #: ../../godmode/setup/news.php:370
@@ -46330,7 +46330,7 @@ msgid "Unknown option."
 msgstr "Opción desconocida."
 
 #: ../../include/functions_ui.php:1950 ../../include/functions_config.php:2686
-msgid "the Flexible Monitoring System"
+msgid "Visibility and monitoring platform"
 msgstr "Sistema Flexible de Monitorización"
 
 #: ../../include/functions_ui.php:2329 ../../include/functions_ui.php:2355
@@ -57532,7 +57532,7 @@ msgstr ""
 #~ msgid "Create Planned Downtime"
 #~ msgstr "Crear tiempo de inactividad planificado"
 
-#~ msgid "Welcome to Pandora FMS"
+#~ msgid "Ngeek visibility center NVC"
 #~ msgstr "Bienvenido a Pandora FMS"
 
 #~ msgid "Message overview"

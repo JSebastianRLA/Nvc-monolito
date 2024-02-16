@@ -78,7 +78,7 @@ function footer()
         $time = get_system_time();
     }
     ?>
-    <div id="footer" style="background: url('../images/pandora.ico.gif') no-repeat left #000;">
+    <div id="footer" style="background: url('../images/pandora.png.gif') no-repeat left #000;">
         <?php
         echo sprintf(__('Pandora FMS %s - Build %s', $pandora_version, $build_version)).'<br />';
         echo __('Generated at').' '.ui_print_timestamp($time, true, ['prominent' => 'timestamp']);

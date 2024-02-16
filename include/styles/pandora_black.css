@@ -73,12 +73,12 @@ div#head {
 
 .menu_full_classic #menu_tabs {
   height: 49px;
-  border-bottom: 1px solid #82b92e;
+  border-bottom: 1px solid #0B579B;
 }
 
 .menu_full_collapsed #menu_tabs {
   height: 49px;
-  border-bottom: 1px solid #82b92e;
+  border-bottom: 1px solid #0B579B;
   padding-bottom: 1px;
 }
 
@@ -86,7 +86,7 @@ div#head {
   border-right: 1px solid #111;
 }
 .logo_green {
-  background-color: #000;
+  background-color: #022243;
 }
 #um-next:hover,
 #um-last:hover {
@@ -212,7 +212,7 @@ input.pure_full {
 }
 
 ol.steps li.current {
-  border-left: 5px solid #82b92e;
+  border-left: 5px solid #0B579B;
   background-color: #545454;
 }
 
@@ -289,7 +289,7 @@ ol.steps li a {
 }
 
 .tabs_selected {
-  background-color: #1d7874;
+  background-color: #4472ff;
 }
 
 .operation .menu_icon ul.submenu > li,
@@ -625,7 +625,7 @@ div#form_activate_licence #code {
 #menu_tab_frame,
 #menu_tab_frame_view,
 #menu_tab_frame_view_bc {
-  border-bottom: 1px solid #82b92e;
+  border-bottom: 1px solid #0B579B;
   background-color: #111 !important;
 }
 
@@ -647,7 +647,7 @@ div#form_activate_licence #code {
 input[type="submit"].submit-next:hover,
 button.submit-next.ui-button.ui-corner-all.ui-widget:hover,
 input[type="button"].submit-next:hover {
-  background: #82b92e;
+  background: #0B579B;
 }
 
 div.nf {
@@ -697,7 +697,7 @@ form#modal_form_feedback ul.wizard li > textarea {
 }
 
 #categories_library .card_category a:hover {
-  color: #82b92e;
+  color: #0B579B;
   text-decoration: none;
 }
 
@@ -880,7 +880,7 @@ text {
   border-radius: 4px;
 }
 .category_link:hover {
-  color: #82b92e;
+  color: #0B579B;
 }
 
 #container_servicemap_legend {
@@ -931,8 +931,8 @@ div.criticity {
 input[type="submit"].submit-next,
 button.submit-next.ui-button.ui-corner-all.ui-widget,
 input[type="button"].submit-next {
-  color: #82b92e;
-  border: 1px solid #82b92e;
+  color: #0B579B;
+  border: 1px solid #0B579B;
   background-color: #222 !important;
 
   padding: 5px;
@@ -967,7 +967,7 @@ button.submit-cancel:hover {
   background: #fb4444;
 }
 .submit-next:hover {
-  background: #82b92e;
+  background: #0B579B;
 }
 
 div#dashboard-controls {
@@ -1427,17 +1427,17 @@ button.submitButton.secondary:hover > div {
 }
 
 .section_table_title_line {
-  background-color: #008d86;
+  background-color: #38C5FF;
 }
 
 .section_table_title {
-  color: #008d86;
+  color: #38C5FF;
 }
 
 select[multiple] option:checked,
 select[multiple] option:active,
 select[multiple] option:hover {
-  background: #008d86 !important;
+  background: #38C5FF !important;
 }
 
 .select2-search.select2-search--dropdown,
@@ -1448,7 +1448,7 @@ select[multiple] option:hover {
 .select2-results
   > .select2-results__options
   > .select2-results__option.select2-results__option--highlighted {
-  background-color: #008d86;
+  background-color: #38C5FF;
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {

@@ -377,7 +377,7 @@ class GroupsStatusWidget extends Widget
             $table->data[3][0] = $this->getCellCounter(
                 $stats['agent_ok'],
                 '',
-                'bg_82B92E'
+                'bg_0B579B'
             );
 
             // Agent Unknown.
@@ -454,7 +454,7 @@ class GroupsStatusWidget extends Widget
             $table->data[3][0] = $this->getCellCounter(
                 $stats['monitor_ok'],
                 '',
-                'bg_82B92E'
+                'bg_0B579B'
             );
 
             // Modules Unknown.

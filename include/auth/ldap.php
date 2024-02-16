@@ -30,7 +30,7 @@ if (!isset($config)) {
 		<meta name="author" content="Artica ST">
 		<meta name="copyright" content="(c) Artica ST">
 		<meta name="robots" content="index, follow">
-		<link rel="icon" href="../../images/pandora.ico" type="image/ico">
+		<link rel="icon" href="../../images/pandora.png" type="image/ico">
 		<link rel="stylesheet" href="../styles/pandora.css" type="text/css">
 	</head>
 	<body>

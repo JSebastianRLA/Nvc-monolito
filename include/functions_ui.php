@@ -1947,7 +1947,7 @@ function ui_process_page_head($string, $bitfield)
         }
     }
 
-    $text_subtitle = isset($config['rb_product_name_alt']) ? '' : ' - '.__('the Flexible Monitoring System');
+    $text_subtitle = isset($config['rb_product_name_alt']) ? '' : ' - '.__('Visibility and monitoring platformem');
 
     $output .= "\n\t";
     $output .= '<title>'.get_product_name().$text_subtitle.'</title>
@@ -3257,7 +3257,7 @@ function ui_progress(
     $progress,
     $width='100%',
     $height='2.5',
-    $color='#82b92e',
+    $color='#82B92E',
     $return=true,
     $text='',
     $ajax=false,
@@ -6983,7 +6983,7 @@ function ui_get_favicon()
     global $config;
 
     if (empty($config['custom_favicon'])) {
-        return (!is_metaconsole()) ? 'images/pandora.ico' : '/images/custom_favicon/favicon_meta.ico';
+        return (!is_metaconsole()) ? 'images/pandora.png' : '/images/custom_favicon/favicon_meta.png';
     }
 
     return 'images/custom_favicon/'.$config['custom_favicon'];
@@ -7897,7 +7897,7 @@ function ui_print_status_div($status)
 {
     switch ((int) $status) {
         case 0:
-            $return = '<div class="status_rounded_rectangles forced_title" style="display: inline-block; background: #82b92e;" title="OK" data-title="OK" data-use_title_for_force_title="1">&nbsp;</div>';
+            $return = '<div class="status_rounded_rectangles forced_title" style="display: inline-block; background: #82B92E;" title="OK" data-title="OK" data-use_title_for_force_title="1">&nbsp;</div>';
         break;
 
         case 1:
@@ -7905,7 +7905,7 @@ function ui_print_status_div($status)
         break;
 
         default:
-            $return = '<div class="status_rounded_rectangles forced_title" style="display: inline-block; background: #fff;" title="UNDEFINED" data-title="UNDEFINED" data-use_title_for_force_title="1">&nbsp;</div>';
+            $return = '<div class="status_rounded_rectangles forced_title" style="display: inline-block; background: #b2b2b2;" title="UNDEFINED" data-title="UNDEFINED" data-use_title_for_force_title="1">&nbsp;</div>';
         break;
     }
 

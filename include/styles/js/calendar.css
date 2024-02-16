@@ -6,7 +6,7 @@
 
 /* Calendar background */
 table.scw {
-  background-color: var(--secondary-color);
+  background-color: #0B579B;
   border: 0 !important;
   border-radius: 4px;
 }

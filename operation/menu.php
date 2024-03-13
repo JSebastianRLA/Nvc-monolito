@@ -197,7 +197,7 @@ if ($access_console_node === true) {
         $sub2['operation/heatmap']['text'] = __('Heatmap view');
         $sub2['operation/heatmap']['refr'] = 0;
 
-        // $sub['view']['sub2'] = $sub2;
+        $sub['view']['sub2'] = $sub2;
 
         // if (check_acl($config['id_user'], 0, 'AR') || check_acl($config['id_user'], 0, 'AW')) {
         //     $sub['operation/inventory/inventory']['text'] = __('Inventory');

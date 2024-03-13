@@ -1327,7 +1327,7 @@ table.tactical_bars {
 }
 
 .ui-btn-active {
-  background: #82B92E !important;
+  background: #0B579B !important;
 }
 
 span.nobold * {
@@ -1916,7 +1916,7 @@ table.tactical_bars * {
 
 .progress_main {
   height: 2.5em;
-  border: 2px solid #82B92E;
+  border: 2px solid #82B92E !important;
   position: relative;
   width: 100%;
   display: inline-block;
@@ -1925,7 +1925,7 @@ table.tactical_bars * {
   line-height: 9pt;
   font-size: 9pt;
   border: 1px solid var(--border-color) !important;
-  background-color: #82B92E;
+  background-color: var(--body-color);
   margin-right: 40px !important;
 }
 
@@ -1948,7 +1948,7 @@ table.tactical_bars * {
 
 .progress {
   width: 0%;
-  background: #82B92E;
+  background: #82B92E !important;
   height: 100%;
   float: left;
   border-radius: 4px;

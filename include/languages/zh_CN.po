@@ -49224,14 +49224,14 @@ msgstr "启用 VLAN"
 msgid "WMI enabled"
 msgstr "启用了 WMI"
 
-#~ msgid "Welcome to Pandora FMS Web Console"
+#~ msgid "Welcome to NVC Web Console"
 #~ msgstr "欢迎使用Pandora FMS网页控制台"
 
-#~ msgid "Pandora FMS Overview"
-#~ msgstr "Pandora FMS总览"
+#~ msgid "NVC Overview"
+#~ msgstr "NVC 总览"
 
-#~ msgid "This is your last activity in Pandora FMS console"
-#~ msgstr "这是您在Pandora FMS控制台的上一次动作"
+#~ msgid "This is your last activity in NVC console"
+#~ msgstr "这是您在NVC 控制台的上一次动作"
 
 #~ msgid ""
 #~ "Access to this page is restricted to authorized users only, please contact "

@@ -59233,7 +59233,7 @@ msgstr ""
 #~ msgid "Filter Networkmaps by %s"
 #~ msgstr "Filtrar mapas de red por %s"
 
-#~ msgid "Pandora FMS Overview"
+#~ msgid "NVC Overview"
 #~ msgstr "Vista general de Pandora FMS"
 
 #~ msgid ""

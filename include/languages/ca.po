@@ -52347,14 +52347,14 @@ msgstr "WMI habilitat"
 #~ msgid "Continue despite this warning"
 #~ msgstr "Continuar malgrat aquesta advertència"
 
-#~ msgid "Pandora FMS Overview"
-#~ msgstr "Pandora FMS Overview"
+#~ msgid "NVC Overview"
+#~ msgstr "NVC Overview"
 
 #~ msgid "Success updatng OS"
 #~ msgstr "Èxit updatng US"
 
-#~ msgid "Local Pandora FMS"
-#~ msgstr "Local Pandora FMS"
+#~ msgid "Local NVC"
+#~ msgstr "Local NVC"
 
 #~ msgid "Data will be compacted in intervals of the specified length."
 #~ msgstr "Les dades es compacten en intervals de la longitud especificada."

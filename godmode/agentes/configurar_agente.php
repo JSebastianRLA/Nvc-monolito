@@ -463,48 +463,48 @@ if ($id_agente) {
     $templatetab['active'] = ($tab === 'template');
 
     // Inventory.
-    $inventorytab['text'] = '<a href="index.php?sec=gagente&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'">'.html_print_image(
-        'images/hardware-software-component@svg.svg',
-        true,
-        [
-            'title' => __('Inventory'),
-            'class' => 'main_menu_icon invert_filter',
-        ]
-    ).'</a>';
+    // $inventorytab['text'] = '<a href="index.php?sec=gagente&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'">'.html_print_image(
+    //     'images/hardware-software-component@svg.svg',
+    //     true,
+    //     [
+    //         'title' => __('Inventory'),
+    //         'class' => 'main_menu_icon invert_filter',
+    //     ]
+    // ).'</a>';
 
-    if ($tab == 'inventory') {
-        $inventorytab['active'] = true;
-    } else {
-        $inventorytab['active'] = false;
-    }
+    // if ($tab == 'inventory') {
+    //     $inventorytab['active'] = true;
+    // } else {
+    //     $inventorytab['active'] = false;
+    // }
 
-    $has_remote_conf = enterprise_hook(
-        'config_agents_has_remote_configuration',
-        [$id_agente]
-    );
-    if ($has_remote_conf === ENTERPRISE_NOT_HOOK) {
-        $has_remote_conf = false;
-    }
+    // $has_remote_conf = enterprise_hook(
+    //     'config_agents_has_remote_configuration',
+    //     [$id_agente]
+    // );
+    // if ($has_remote_conf === ENTERPRISE_NOT_HOOK) {
+    //     $has_remote_conf = false;
+    // }
 
-    if ($has_remote_conf === true) {
-        // Plugins.
-        $pluginstab = enterprise_hook('plugins_tab');
-        if ($pluginstab === ENTERPRISE_NOT_HOOK) {
-            $pluginstab = '';
-        }
-    } else {
-        $pluginstab = '';
-    }
+    // if ($has_remote_conf === true) {
+    //     // Plugins.
+    //     $pluginstab = enterprise_hook('plugins_tab');
+    //     if ($pluginstab === ENTERPRISE_NOT_HOOK) {
+    //         $pluginstab = '';
+    //     }
+    // } else {
+    //     $pluginstab = '';
+    // }
 
-    // Collection.
-    if ((int) $config['license_nms'] !== 1) {
-        $collectiontab = enterprise_hook('collection_tab');
-        if ($collectiontab === ENTERPRISE_NOT_HOOK) {
-            $collectiontab = '';
-        }
-    } else {
-        $collectiontab = '';
-    }
+    // // Collection.
+    // if ((int) $config['license_nms'] !== 1) {
+    //     $collectiontab = enterprise_hook('collection_tab');
+    //     if ($collectiontab === ENTERPRISE_NOT_HOOK) {
+    //         $collectiontab = '';
+    //     }
+    // } else {
+    //     $collectiontab = '';
+    // }
 
     // NetworkConfigManager tab.
     $ncm_tab = enterprise_hook('networkconfigmanager_tab');
@@ -722,10 +722,10 @@ if ($id_agente) {
             $tab_name = __('Network config manager');
         break;
 
-        case 'inventory':
-            $help_header = 'inventory_tab';
-            $tab_name = __('Inventory');
-        break;
+        // case 'inventory':
+        //     $help_header = 'inventory_tab';
+        //     $tab_name = __('Inventory');
+        // break;
 
         case 'plugins':
             $help_header = 'plugins_tab';

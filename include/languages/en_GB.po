@@ -47479,8 +47479,8 @@ msgstr ""
 #~ msgid "Welcome to Pandora FMS Web Console"
 #~ msgstr "Welcome to Pandora FMS Web Console"
 
-#~ msgid "Pandora FMS Overview"
-#~ msgstr "Pandora FMS Overview"
+#~ msgid "NVC Overview"
+#~ msgstr "NVC Overview"
 
 #~ msgid "Welcome to Pandora FMS"
 #~ msgstr "Welcome to Pandora FMS"

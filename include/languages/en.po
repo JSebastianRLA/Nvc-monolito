@@ -5440,7 +5440,7 @@ msgid ""
 msgstr ""
 
 #: ../../general/logon_ok.php:114 ../../general/logon_ok.php:318
-msgid "Pandora FMS Overview"
+msgid "NVC Overview"
 msgstr ""
 
 #: ../../general/logon_ok.php:181 ../../general/logon_ok.php:380

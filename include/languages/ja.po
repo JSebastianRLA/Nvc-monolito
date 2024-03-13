@@ -56292,11 +56292,11 @@ msgstr ""
 #~ msgid "Prior"
 #~ msgstr "前"
 
-#~ msgid "Pandora FMS Overview"
-#~ msgstr "Pandora FMS 概要"
+#~ msgid "NVC Overview"
+#~ msgstr "NVC 概要"
 
-#~ msgid "This is your last activity in Pandora FMS console"
-#~ msgstr "Pandora FMS コンソールにおける最近の操作"
+#~ msgid "This is your last activity in NVC console"
+#~ msgstr "NVC コンソールにおける最近の操作"
 
 #~ msgid ""
 #~ "Access to this page is restricted to authorized users only, please contact "

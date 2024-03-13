@@ -61521,7 +61521,7 @@ msgstr ""
 #~ "Veuillez introduire l'information suivante pour configurer correctement "
 #~ "votre instance de Pandora FMS"
 
-#~ msgid "Pandora FMS Overview"
+#~ msgid "NVC Overview"
 #~ msgstr "Aperçu de Pandora FMS"
 
 #~ msgid "This is your last activity in Pandora FMS console"

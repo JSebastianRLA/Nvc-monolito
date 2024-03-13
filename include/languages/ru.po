@@ -50327,8 +50327,8 @@ msgstr "WMI включен"
 #~ msgid "Welcome to Pandora FMS Web Console"
 #~ msgstr "Добро пожаловать в консоль Pandora FMS"
 
-#~ msgid "Pandora FMS Overview"
-#~ msgstr "Обзор Pandora FMS"
+#~ msgid "NVC Overview"
+#~ msgstr "Обзор NVC"
 
 #~ msgid "This is your last activity in Pandora FMS console"
 #~ msgstr "Это ваше последнее действие в консоли Pandora FMS"

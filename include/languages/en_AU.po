@@ -30975,12 +30975,12 @@ msgstr ""
 "malfunction."
 
 #: ../../general/logon_ok.php:32
-msgid "Welcome to Pandora FMS Web Console"
-msgstr "Welcome to Pandora FMS Web Console"
+msgid "Welcome to NVC Web Console"
+msgstr "Welcome to NVC Web Console"
 
 #: ../../general/logon_ok.php:114 ../../general/logon_ok.php:315
-msgid "Pandora FMS Overview"
-msgstr "Pandora FMS Overview"
+msgid "NVC Overview"
+msgstr "NVC Overview"
 
 #: ../../general/logon_ok.php:179 ../../general/logon_ok.php:377
 msgid "News board"

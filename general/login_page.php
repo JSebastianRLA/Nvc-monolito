@@ -172,36 +172,36 @@ $support_logo = ui_get_support_logo();
 echo '<div id="login_body" '.$login_body_style.'>';
 echo '<div id="header_login" class="'.$style_theme.'">';
 
-echo '<div id="list_icon_docs_support"><ul>';
+// echo '<div id="list_icon_docs_support"><ul>';
 
-if (isset($config['custom_docs_url'])) {
-    if ($docs_logo !== false) {
-        echo '<li id="li_margin_doc_img"><a href="'.ui_get_full_external_url($config['custom_docs_url']).'" target="_blank"><img src="'.$docs_logo.'" alt="docs"></a></li>';
-    }
+// if (isset($config['custom_docs_url'])) {
+//     if ($docs_logo !== false) {
+//         echo '<li id="li_margin_doc_img"><a href="'.ui_get_full_external_url($config['custom_docs_url']).'" target="_blank"><img src="'.$docs_logo.'" alt="docs"></a></li>';
+//     }
 
-    echo '<li id="li_margin_doc"><a href="'.ui_get_full_external_url($config['custom_docs_url']).'" target="_blank">'.__('Docs').'</li>';
-} else if (!$custom_conf_enabled) {
-    echo '<li id="li_margin_doc_img"><a href="https://pandorafms.com/manual/" target="_blank"><img src="'.$docs_logo.'" alt="docs"></a></li>';
-    echo '<li id="li_margin_doc"><a href="https://pandorafms.com/manual/" target="_blank">'.__('Docs').'</li>';
-}
+//     echo '<li id="li_margin_doc"><a href="'.ui_get_full_external_url($config['custom_docs_url']).'" target="_blank">'.__('Docs').'</li>';
+// } else if (!$custom_conf_enabled) {
+//     echo '<li id="li_margin_doc_img"><a href="https://pandorafms.com/manual/" target="_blank"><img src="'.$docs_logo.'" alt="docs"></a></li>';
+//     echo '<li id="li_margin_doc"><a href="https://pandorafms.com/manual/" target="_blank">'.__('Docs').'</li>';
+// }
 
-if (isset($config['custom_support_url'])) {
-    if (file_exists(ENTERPRISE_DIR.'/load_enterprise.php')) {
-        if ($support_logo !== false) {
-            echo '<li id="li_margin_support_img"><a href="'.ui_get_full_external_url($config['custom_support_url']).'" target="_blank"><img src="'.$support_logo.'" alt="support"></a></li>';
-        }
+// if (isset($config['custom_support_url'])) {
+//     if (file_exists(ENTERPRISE_DIR.'/load_enterprise.php')) {
+//         if ($support_logo !== false) {
+//             echo '<li id="li_margin_support_img"><a href="'.ui_get_full_external_url($config['custom_support_url']).'" target="_blank"><img src="'.$support_logo.'" alt="support"></a></li>';
+//         }
 
-        echo '<li id="li_margin_support"><a href="'.ui_get_full_external_url($config['custom_support_url']).'" target="_blank">'.__('Support').'</li>';
-    } else {
-        echo '<li id="li_margin_support_img"><a href="https://pandorafms.com/monitoring-services/support/" target="_blank"><img src="'.$support_logo.'" alt="support"></a></li>';
-        echo '<li id="li_margin_support"><a href="https://support.pandorafms.com" target="_blank">'.__('Support').'</a></li>';
-    }
-} else if (!$custom_conf_enabled) {
-    echo '<li id="li_margin_support_img"><a href="https://support.pandorafms.com" target="_blank"><img src="'.$support_logo.'" alt="support"></a></li>';
-    echo '<li id="li_margin_support"><a href="https://support.pandorafms.com" target="_blank">'.__('Support').'</a></li>';
-}
+//         echo '<li id="li_margin_support"><a href="'.ui_get_full_external_url($config['custom_support_url']).'" target="_blank">'.__('Support').'</li>';
+//     } else {
+//         echo '<li id="li_margin_support_img"><a href="https://pandorafms.com/monitoring-services/support/" target="_blank"><img src="'.$support_logo.'" alt="support"></a></li>';
+//         echo '<li id="li_margin_support"><a href="https://support.pandorafms.com" target="_blank">'.__('Support').'</a></li>';
+//     }
+// } else if (!$custom_conf_enabled) {
+//     echo '<li id="li_margin_support_img"><a href="https://support.pandorafms.com" target="_blank"><img src="'.$support_logo.'" alt="support"></a></li>';
+//     echo '<li id="li_margin_support"><a href="https://support.pandorafms.com" target="_blank">'.__('Support').'</a></li>';
+// }
 
-        echo '</ul></div>';
+//         echo '</ul></div>';
 
 
 echo '</div>';

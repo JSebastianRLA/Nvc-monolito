@@ -189,8 +189,8 @@ if ($access_console_node === true) {
         $sub2['godmode/modules/manage_network_components']['id'] = 'network_components';
         $sub['templates']['sub2'] = $sub2;
 
-        $sub['godmode/modules/manage_inventory_modules']['text'] = __('Inventory modules');
-        $sub['godmode/modules/manage_inventory_modules']['id'] = 'Inventory_modules';
+        // $sub['godmode/modules/manage_inventory_modules']['text'] = __('Inventory modules');
+        // $sub['godmode/modules/manage_inventory_modules']['id'] = 'Inventory_modules';
 
         enterprise_hook('autoconfiguration_menu');
         enterprise_hook('agent_repository_menu');

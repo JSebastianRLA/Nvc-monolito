@@ -176,101 +176,101 @@ if ($load_inventory_module) {
     $custom_fields = [];
 }
 
-// Inventory module configuration
-$form_buttons = '';
-if ($load_inventory_module) {
-    $form_buttons .= html_print_input_hidden('id_agent_module_inventory', $id_agent_module_inventory, true);
-    $form_buttons .= html_print_submit_button(
-        __('Update'),
-        'update_inventory_module',
-        false,
-        ['icon' => 'wand'],
-        true
-    );
-} else {
-    $form_buttons .= html_print_submit_button(
-        __('Add'),
-        'add_inventory_module',
-        false,
-        ['icon' => 'wand'],
-        true
-    );
-}
+// // Inventory module configuration
+// $form_buttons = '';
+// if ($load_inventory_module) {
+//     $form_buttons .= html_print_input_hidden('id_agent_module_inventory', $id_agent_module_inventory, true);
+//     $form_buttons .= html_print_submit_button(
+//         __('Update'),
+//         'update_inventory_module',
+//         false,
+//         ['icon' => 'wand'],
+//         true
+//     );
+// } else {
+//     $form_buttons .= html_print_submit_button(
+//         __('Add'),
+//         'add_inventory_module',
+//         false,
+//         ['icon' => 'wand'],
+//         true
+//     );
+// }
 
-echo ui_get_inventory_module_add_form(
-    'index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente,
-    html_print_action_buttons($form_buttons, [], true),
-    $load_inventory_module,
-    $id_os,
-    $target,
-    $interval,
-    $username,
-    $password,
-    $custom_fields_enabled,
-    $custom_fields
-);
+// echo ui_get_inventory_module_add_form(
+//     'index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente,
+//     html_print_action_buttons($form_buttons, [], true),
+//     $load_inventory_module,
+//     $id_os,
+//     $target,
+//     $interval,
+//     $username,
+//     $password,
+//     $custom_fields_enabled,
+//     $custom_fields
+// );
 
-// Inventory module list
-$sql = sprintf(
-    'SELECT *
-	FROM tmodule_inventory, tagent_module_inventory
-	WHERE tagent_module_inventory.id_agente = %d
-		AND tmodule_inventory.id_module_inventory = tagent_module_inventory.id_module_inventory
-	ORDER BY name',
-    $id_agente
-);
-$result = db_process_sql($sql);
-if (db_get_num_rows($sql) == 0) {
-    echo '&nbsp;</td></tr><tr><td>';
-} else {
-    $table = new stdClass();
-    $table->width = '100%';
-    $table->class = 'databox info_table max_floating_element_size';
-    $table->data = [];
-    $table->head = [];
-    $table->styleTable = '';
-    $table->head[0] = "<span title='".__('Policy')."'>".__('P.').'</span>';
-    $table->head[1] = __('Name');
-    $table->head[2] = __('Description');
-    $table->head[3] = __('Target');
-    $table->head[4] = __('Interval');
-    $table->head[5] = __('Actions');
-    $table->align = [];
-    $table->align[5] = 'left';
-    $i = 0;
-    foreach ($result as $row) {
-        $table->cellclass[$i++][5] = 'table_action_buttons';
-        $data = [];
+// // Inventory module list
+// $sql = sprintf(
+//     'SELECT *
+// 	FROM tmodule_inventory, tagent_module_inventory
+// 	WHERE tagent_module_inventory.id_agente = %d
+// 		AND tmodule_inventory.id_module_inventory = tagent_module_inventory.id_module_inventory
+// 	ORDER BY name',
+//     $id_agente
+// );
+// $result = db_process_sql($sql);
+// if (db_get_num_rows($sql) == 0) {
+//     echo '&nbsp;</td></tr><tr><td>';
+// } else {
+//     $table = new stdClass();
+//     $table->width = '100%';
+//     $table->class = 'databox info_table max_floating_element_size';
+//     $table->data = [];
+//     $table->head = [];
+//     $table->styleTable = '';
+//     $table->head[0] = "<span title='".__('Policy')."'>".__('P.').'</span>';
+//     $table->head[1] = __('Name');
+//     $table->head[2] = __('Description');
+//     $table->head[3] = __('Target');
+//     $table->head[4] = __('Interval');
+//     $table->head[5] = __('Actions');
+//     $table->align = [];
+//     $table->align[5] = 'left';
+//     $i = 0;
+//     foreach ($result as $row) {
+//         $table->cellclass[$i++][5] = 'table_action_buttons';
+//         $data = [];
 
-        $sql = sprintf('SELECT id_policy FROM tpolicy_modules_inventory WHERE id = %d', $row['id_policy_module_inventory']);
-        $id_policy = db_get_value_sql($sql);
+//         $sql = sprintf('SELECT id_policy FROM tpolicy_modules_inventory WHERE id = %d', $row['id_policy_module_inventory']);
+//         $id_policy = db_get_value_sql($sql);
 
-        if ($id_policy) {
-            $policy = policies_get_policy($id_policy);
-            $data[0] = '<a href="index.php?sec=gmodules&sec2='.ENTERPRISE_DIR.'/godmode/policies/policies&id='.$id_policy.'">';
-            $data[0] .= html_print_image('images/policy@svg.svg', true, ['border' => '0', 'title' => $policy['name'], 'class' => 'main_menu_icon invert_filter']);
-            $data[0] .= '</a>';
-        } else {
-            $data[0] = '';
-        }
+//         if ($id_policy) {
+//             $policy = policies_get_policy($id_policy);
+//             $data[0] = '<a href="index.php?sec=gmodules&sec2='.ENTERPRISE_DIR.'/godmode/policies/policies&id='.$id_policy.'">';
+//             $data[0] .= html_print_image('images/policy@svg.svg', true, ['border' => '0', 'title' => $policy['name'], 'class' => 'main_menu_icon invert_filter']);
+//             $data[0] .= '</a>';
+//         } else {
+//             $data[0] = '';
+//         }
 
-        $data[1] = '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&load_inventory_module='.$row['id_module_inventory'].'">'.$row['name'].'</a>';
-        $data[2] = $row['description'];
-        $data[3] = $row['target'];
-        $data[4] = human_time_description_raw($row['interval']);
-        // Delete module
-        $data[5] = '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&delete_inventory_module='.$row['id_agent_module_inventory'].'" onClick="if (!confirm(\''.__('Are you sure?').'\')) return false;">';
-        $data[5] .= html_print_image('images/delete.svg', true, ['border' => '0', 'title' => __('Delete'), 'class' => 'main_menu_icon invert_filter']);
-        $data[5] .= '</b></a>&nbsp;&nbsp;';
-        // Update module
-        $data[5] .= '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&load_inventory_module='.$row['id_module_inventory'].'">';
-        $data[5] .= html_print_image('images/edit.svg', true, ['border' => '0', 'title' => __('Update'), 'class' => 'main_menu_icon invert_filter']);
-        $data[5] .= '</b></a>&nbsp;&nbsp;';
-        // Force refresh module
-        $data[5] .= '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&force_inventory_module='.$row['id_agent_module_inventory'].'">';
-        $data[5] .= html_print_image('images/force@svg.svg', true, ['border' => '0', 'title' => __('Force'), 'class' => 'main_menu_icon invert_filter']).'</b></a>';
-        array_push($table->data, $data);
-    }
+//         $data[1] = '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&load_inventory_module='.$row['id_module_inventory'].'">'.$row['name'].'</a>';
+//         $data[2] = $row['description'];
+//         $data[3] = $row['target'];
+//         $data[4] = human_time_description_raw($row['interval']);
+//         // Delete module
+//         $data[5] = '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&delete_inventory_module='.$row['id_agent_module_inventory'].'" onClick="if (!confirm(\''.__('Are you sure?').'\')) return false;">';
+//         $data[5] .= html_print_image('images/delete.svg', true, ['border' => '0', 'title' => __('Delete'), 'class' => 'main_menu_icon invert_filter']);
+//         $data[5] .= '</b></a>&nbsp;&nbsp;';
+//         // Update module
+//         $data[5] .= '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&load_inventory_module='.$row['id_module_inventory'].'">';
+//         $data[5] .= html_print_image('images/edit.svg', true, ['border' => '0', 'title' => __('Update'), 'class' => 'main_menu_icon invert_filter']);
+//         $data[5] .= '</b></a>&nbsp;&nbsp;';
+//         // Force refresh module
+//         $data[5] .= '<a href="index.php?sec=estado&sec2=godmode/agentes/configurar_agente&tab=inventory&id_agente='.$id_agente.'&force_inventory_module='.$row['id_agent_module_inventory'].'">';
+//         $data[5] .= html_print_image('images/force@svg.svg', true, ['border' => '0', 'title' => __('Force'), 'class' => 'main_menu_icon invert_filter']).'</b></a>';
+//         array_push($table->data, $data);
+//     }
 
-    html_print_table($table);
-}
+//     html_print_table($table);
+// }

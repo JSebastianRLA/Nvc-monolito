@@ -30922,7 +30922,7 @@ msgid ""
 msgstr ""
 
 #: ../../general/logon_ok.php:32
-msgid "Welcome to NVC Web Console"
+msgid "Welcome to NVCgit  Web Console"
 msgstr "歡迎使用NVC管理系統"
 
 #: ../../general/logon_ok.php:114 ../../general/logon_ok.php:315
@@ -31002,7 +31002,7 @@ msgstr ""
 
 #: ../../general/login_page.php:282
 msgid "Why is it recommended to upgrade the web browser?"
-msgstr ""
+msgstr "" 
 
 #: ../../general/login_page.php:287
 msgid ""

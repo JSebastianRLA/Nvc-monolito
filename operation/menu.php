@@ -194,8 +194,8 @@ if ($access_console_node === true) {
         $sub2['operation/agentes/alerts_status']['text'] = __('Alert detail');
         $sub2['operation/agentes/alerts_status']['refr'] = 0;
 
-        $sub2['operation/heatmap']['text'] = __('Heatmap view');
-        $sub2['operation/heatmap']['refr'] = 0;
+        // $sub2['operation/heatmap']['text'] = __('Heatmap view');
+        // $sub2['operation/heatmap']['refr'] = 0;
 
         $sub['view']['sub2'] = $sub2;
 
@@ -205,30 +205,30 @@ if ($access_console_node === true) {
         //     $sub['operation/inventory/inventory']['refr'] = 0;
         // }
 
-        if ($config['activate_netflow'] || $config['activate_sflow']) {
-            $sub['network_traffic'] = [
-                'text'    => __('Network'),
-                'id'      => 'Network',
-                'type'    => 'direct',
-                'subtype' => 'nolink',
-                'refr'    => 0,
-            ];
-            $netflow_sub = [
-                'operation/netflow/netflow_explorer'  => [
-                    'text' => __('Netflow explorer'),
-                    'id'   => 'Netflow explorer',
-                ],
-                'operation/netflow/nf_live_view'      => [
-                    'text' => __('Netflow Live View'),
-                    'id'   => 'Netflow Live View',
-                ],
-                'operation/network/network_usage_map' => [
-                    'text' => __('Network usage map'),
-                    'id'   => 'Network usage map',
-                ],
-            ];
-            $sub['network_traffic']['sub2'] = $netflow_sub;
-        }
+        // if ($config['activate_netflow'] || $config['activate_sflow']) {
+        //     $sub['network_traffic'] = [
+        //         'text'    => __('Network'),
+        //         'id'      => 'Network',
+        //         'type'    => 'direct',
+        //         'subtype' => 'nolink',
+        //         'refr'    => 0,
+        //     ];
+        //     $netflow_sub = [
+        //         'operation/netflow/netflow_explorer'  => [
+        //             'text' => __('Netflow explorer'),
+        //             'id'   => 'Netflow explorer',
+        //         ],
+        //         'operation/netflow/nf_live_view'      => [
+        //             'text' => __('Netflow Live View'),
+        //             'id'   => 'Netflow Live View',
+        //         ],
+        //         'operation/network/network_usage_map' => [
+        //             'text' => __('Network usage map'),
+        //             'id'   => 'Network usage map',
+        //         ],
+        //     ];
+        //     $sub['network_traffic']['sub2'] = $netflow_sub;
+        // }
 
         if ($config['log_collector'] == 1) {
             enterprise_hook('log_collector_menu');

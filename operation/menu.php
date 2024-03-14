@@ -186,13 +186,13 @@ if ($access_console_node === true) {
         $sub2['operation/agentes/status_monitor']['text'] = __('Monitor detail');
         $sub2['operation/agentes/status_monitor']['refr'] = 0;
 
-        $sub2['operation/agentes/interface_view']['text'] = __('Interface view');
-        $sub2['operation/agentes/interface_view']['refr'] = 0;
+        // $sub2['operation/agentes/interface_view']['text'] = __('Interface view');
+        // $sub2['operation/agentes/interface_view']['refr'] = 0;
 
         enterprise_hook('tag_view_submenu');
 
-        $sub2['operation/agentes/alerts_status']['text'] = __('Alert detail');
-        $sub2['operation/agentes/alerts_status']['refr'] = 0;
+        // $sub2['operation/agentes/alerts_status']['text'] = __('Alert detail');
+        // $sub2['operation/agentes/alerts_status']['refr'] = 0;
 
         // $sub2['operation/heatmap']['text'] = __('Heatmap view');
         // $sub2['operation/heatmap']['refr'] = 0;
@@ -263,11 +263,11 @@ if ($access_console_node === true) {
         $sub['snmpconsole']['subtype'] = 'nolink';
     }
 
-    if (check_acl($config['id_user'], 0, 'AR')) {
-        $sub['operation/cluster/cluster']['text'] = __('Cluster View');
-        $sub['operation/cluster/cluster']['id'] = 'cluster';
-        $sub['operation/cluster/cluster']['refr'] = 0;
-    }
+    // if (check_acl($config['id_user'], 0, 'AR')) {
+    //     $sub['operation/cluster/cluster']['text'] = __('Cluster View');
+    //     $sub['operation/cluster/cluster']['id'] = 'cluster';
+    //     $sub['operation/cluster/cluster']['refr'] = 0;
+    // }
 
     enterprise_hook('aws_menu');
     enterprise_hook('SAP_view');
@@ -558,37 +558,37 @@ if ($access_console_node === true) {
             $fb64 = base64_encode(json_encode($user_event_filter));
 
             // RSS.
-            $sub['operation/events/events_rss.php?user='.$config['id_user'].'&amp;hashup='.$hashup.'&fb64='.$fb64]['text'] = __('RSS');
-            $sub['operation/events/events_rss.php?user='.$config['id_user'].'&amp;hashup='.$hashup.'&fb64='.$fb64]['id'] = 'RSS';
-            $sub['operation/events/events_rss.php?user='.$config['id_user'].'&amp;hashup='.$hashup.'&fb64='.$fb64]['type'] = 'direct';
+            // $sub['operation/events/events_rss.php?user='.$config['id_user'].'&amp;hashup='.$hashup.'&fb64='.$fb64]['text'] = __('RSS');
+            // $sub['operation/events/events_rss.php?user='.$config['id_user'].'&amp;hashup='.$hashup.'&fb64='.$fb64]['id'] = 'RSS';
+            // $sub['operation/events/events_rss.php?user='.$config['id_user'].'&amp;hashup='.$hashup.'&fb64='.$fb64]['type'] = 'direct';
         }
 
         // Acoustic console.
-        $data_sound = base64_encode(
-            json_encode(
-                [
-                    'title'        => __('Acoustic console'),
-                    'start'        => __('Start'),
-                    'stop'         => __('Stop'),
-                    'noAlert'      => __('No alert'),
-                    'silenceAlarm' => __('Silence alarm'),
-                    'url'          => ui_get_full_url('ajax.php'),
-                    'page'         => 'include/ajax/events',
-                    'urlSound'     => 'include/sounds/',
-                ]
-            )
-        );
+    //     $data_sound = base64_encode(
+    //         json_encode(
+    //             [
+    //                 'title'        => __('Acoustic console'),
+    //                 'start'        => __('Start'),
+    //                 'stop'         => __('Stop'),
+    //                 'noAlert'      => __('No alert'),
+    //                 'silenceAlarm' => __('Silence alarm'),
+    //                 'url'          => ui_get_full_url('ajax.php'),
+    //                 'page'         => 'include/ajax/events',
+    //                 'urlSound'     => 'include/sounds/',
+    //             ]
+    //         )
+    //     );
 
-        $javascript = 'javascript: openSoundEventModal(`'.$data_sound.'`);';
-        $sub[$javascript]['text'] = __('Acoustic console');
-        $sub[$javascript]['id'] = 'Acoustic console Modal';
-        $sub[$javascript]['type'] = 'direct';
+    //     $javascript = 'javascript: openSoundEventModal(`'.$data_sound.'`);';
+    //     $sub[$javascript]['text'] = __('Acoustic console');
+    //     $sub[$javascript]['id'] = 'Acoustic console Modal';
+    //     $sub[$javascript]['type'] = 'direct';
 
-        echo '<div id="modal-sound" style="display:none;"></div>';
+    //     echo '<div id="modal-sound" style="display:none;"></div>';
 
-        ui_require_javascript_file('pandora_events');
+    //     ui_require_javascript_file('pandora_events');
 
-        $menu_operation['eventos']['sub'] = $sub;
+    //     $menu_operation['eventos']['sub'] = $sub;
     }
 }
 

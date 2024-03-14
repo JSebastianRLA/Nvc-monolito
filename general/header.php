@@ -28,12 +28,12 @@ echo sprintf('<div id="header_table" class="header_table_%s">', $menuTypeClass);
 ?>
     <div id="header_table_inner">
         <?php
-        // ======= Notifications Discovery ===============================================
-        $notifications_numbers = notifications_get_counters();
-        $header_discovery = '<div id="header_discovery">'.notifications_print_ball(
-            $notifications_numbers['notifications'],
-            $notifications_numbers['last_id']
-        ).'</div>';
+        // // ======= Notifications Discovery ===============================================
+        // $notifications_numbers = notifications_get_counters();
+        // $header_discovery = '<div id="header_discovery">'.notifications_print_ball(
+        //     $notifications_numbers['notifications'],
+        //     $notifications_numbers['last_id']
+        // ).'</div>';
 
         // ======= Servers List ===============================================
         if ((bool) check_acl($config['id_user'], 0, 'AW') !== false) {

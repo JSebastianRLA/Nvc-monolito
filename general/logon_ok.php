@@ -181,7 +181,7 @@ if (users_is_admin() || check_acl($config['id_user'], 0, 'UM')) {
 
 ui_toggle(
     html_print_table($table, true),
-    __('%s Overview', get_product_name()),
+    __('NVC Overview', get_product_name()),
     '',
     'overview',
     false

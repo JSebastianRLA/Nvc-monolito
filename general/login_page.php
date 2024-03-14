@@ -519,7 +519,6 @@ if (file_exists(ENTERPRISE_DIR . '/load_enterprise.php')) {
 echo '</div>';
 
 echo '<div class ="text_banner_login">';
-
 echo '<div><span class="span123">';
 echo 'WELCOME TO NGEEK VISIBILITY CENTER<br>';
 echo '</span></div>';

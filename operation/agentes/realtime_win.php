@@ -111,11 +111,11 @@ echo '<link rel="stylesheet" href="../../include/styles/pandora.css?v='.$config[
         if (!extensions_is_enabled_extension('realtime_graphs.php')) {
                 ui_print_error_message(__('Realtime extension is not enabled.'));
             return;
-        } else {
-            include_once '../../extensions/realtime_graphs.php';
+        } 
+        else {
+           return "algo";  // include_once '../../extensions/realtime_graphs.php';
         }
 
-            pandora_realtime_graphs();
         ?>
 
     </body>

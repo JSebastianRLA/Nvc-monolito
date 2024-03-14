@@ -298,13 +298,13 @@ function pandora_realtime_graphs()
 }
 
 
-extensions_add_operation_menu_option(
-    __('Realtime graphs'),
-    'estado',
-    null,
-    'v1r1',
-    'view'
-);
+// extensions_add_operation_menu_option(
+//     __('Realtime graphs'),
+//     'estado',
+//     null,
+//     'v1r1',
+//     'view'
+// );
 extensions_add_main_function('pandora_realtime_graphs');
 
 $db = null;

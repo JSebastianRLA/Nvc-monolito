@@ -33,13 +33,13 @@ require_once $config['homedir'].'/include/class/AgentsAlerts.class.php';
 // Get the parameter.
 $sec2 = get_parameter_get('sec2');
 // Add operation menu option.
-extensions_add_operation_menu_option(
-    __('Agents/Alerts view'),
-    'estado',
-    null,
-    'v1r1',
-    'view'
-);
+// extensions_add_operation_menu_option(
+//     __('Agents/Alerts view'),
+//     'estado',
+//     null,
+//     'v1r1',
+//     'view'
+// );
 
 // If sec2 parameter come with this page info.
 if ($sec2 === 'extensions/agents_alerts') {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Funtions real time.
  *
@@ -28,8 +29,8 @@
 
 global $config;
 
-require_once $config['homedir'].'/include/graphs/fgraph.php';
-require_once $config['homedir'].'/include/functions_snmp_browser.php';
+require_once $config['homedir'] . '/include/graphs/fgraph.php';
+require_once $config['homedir'] . '/include/functions_snmp_browser.php';
 
 
 /**
@@ -137,12 +138,12 @@ function pandora_realtime_graphs()
         $module_name = io_safe_output(get_parameter('module_name', ''));
         $module_incremental = get_parameter('incremental', 0);
         $data['module_info'] = html_print_label_input_block(
-            $agent_alias.': '.$module_name,
+            $agent_alias . ': ' . $module_name,
             html_print_input_hidden(
                 'incremental',
                 $module_incremental,
                 true
-            ).html_print_select(
+            ) . html_print_select(
                 ['snmp_module' => '-'],
                 'graph',
                 'snmp_module',
@@ -213,7 +214,7 @@ function pandora_realtime_graphs()
 
     ui_toggle(
         $searchForm,
-        '<span class="subsection_header_title">'.__('Filters').'</span>',
+        '<span class="subsection_header_title">' . __('Filters') . '</span>',
         'filter_form',
         '',
         true,
@@ -279,17 +280,17 @@ function pandora_realtime_graphs()
         'custom_action',
         urlencode(
             base64_encode(
-                '&nbsp;<a href="javascript:realtimeGraphs.setOID();"><img src="'.ui_get_full_url('images').'/input_filter.disabled.png" title="'.__('Use this OID').'" class="vertical_middle"></img></a>'
+                '&nbsp;<a href="javascript:realtimeGraphs.setOID();"><img src="' . ui_get_full_url('images') . '/input_filter.disabled.png" title="' . __('Use this OID') . '" class="vertical_middle"></img></a>'
             )
         ),
         false
     );
     html_print_input_hidden('incremental_base', '0');
 
-    echo '<script type="text/javascript" src="'.ui_get_full_url('include/javascript/pandora_snmp_browser.js').'?v='.$config['current_package'].'"></script>';
-    echo '<script type="text/javascript" src="'.ui_get_full_url('extensions/realtime_graphs/realtime_graphs.js').'?v='.$config['current_package'].'"></script>';
+    echo '<script type="text/javascript" src="' . ui_get_full_url('include/javascript/pandora_snmp_browser.js') . '?v=' . $config['current_package'] . '"></script>';
+    echo '<script type="text/javascript" src="' . ui_get_full_url('extensions/realtime_graphs/realtime_graphs.js') . '?v=' . $config['current_package'] . '"></script>';
     if ($config['style'] !== 'pandora_black') {
-        echo '<link rel="stylesheet" type="text/css" href="'.ui_get_full_url('extensions/realtime_graphs/realtime_graphs.css').'?v='.$config['current_package'].'"></style>';
+        echo '<link rel="stylesheet" type="text/css" href="' . ui_get_full_url('extensions/realtime_graphs/realtime_graphs.css') . '?v=' . $config['current_package'] . '"></style>';
     }
 
     // Store servers timezone offset to be retrieved from js.
@@ -297,13 +298,13 @@ function pandora_realtime_graphs()
 }
 
 
-// extensions_add_operation_menu_option(
-//     __('Realtime graphs'),
-//     'estado',
-//     null,
-//     'v1r1',
-//     'view'
-// );
-// extensions_add_main_function('pandora_realtime_graphs');
+extensions_add_operation_menu_option(
+    __('Realtime graphs'),
+    'estado',
+    null,
+    'v1r1',
+    'view'
+);
+extensions_add_main_function('pandora_realtime_graphs');
 
-// $db = null;
+$db = null;

@@ -90,11 +90,11 @@ if ((bool) check_acl($config['id_user'], 0, 'AR') === true
         }
     }
 
-    // Add to menu.
-    $menu_godmode['discovery']['text'] = __('Discovery');
-    $menu_godmode['discovery']['sec2'] = '';
-    $menu_godmode['discovery']['id'] = 'god-discovery';
-    $menu_godmode['discovery']['sub'] = $sub;
+    // // Add to menu.
+    // $menu_godmode['discovery']['text'] = __('Discovery');
+    // $menu_godmode['discovery']['sec2'] = '';
+    // $menu_godmode['discovery']['id'] = 'god-discovery';
+    // $menu_godmode['discovery']['sub'] = $sub;
 }
 
 if ($access_console_node === true) {
@@ -432,8 +432,8 @@ if ((bool) check_acl($config['id_user'], 0, 'PM') === true || (bool) check_acl($
             // Audit //meter en extensiones.
             $sub['godmode/audit_log']['text'] = __('System audit log');
             $sub['godmode/audit_log']['id'] = 'system_audit_log';
-            $sub['godmode/setup/links']['text'] = __('Links');
-            $sub['godmode/setup/links']['id'] = 'links';
+            // $sub['godmode/setup/links']['text'] = __('Links');
+            // $sub['godmode/setup/links']['id'] = 'links';
             $sub['tools/diagnostics']['text'] = __('Diagnostic info');
             $sub['tools/diagnostics']['id'] = 'diagnostic_info';
             enterprise_hook('omnishell');
@@ -554,21 +554,21 @@ if ($access_console_node === true) {
         }
     }
 
-    $menu_godmode['links']['text'] = __('Links');
-    $menu_godmode['links']['sec2'] = '';
-    $menu_godmode['links']['id'] = 'god-links';
+    // $menu_godmode['links']['text'] = __('Links');
+    // $menu_godmode['links']['sec2'] = '';
+    // $menu_godmode['links']['id'] = 'god-links';
 
-    $sub = [];
-    $rows = db_get_all_rows_in_table('tlink', 'name');
-    foreach ($rows as $row) {
-        // Audit //meter en extensiones.
-        $sub[$row['link']]['text'] = $row['name'];
-        $sub[$row['link']]['id'] = $row['name'];
-        $sub[$row['link']]['type'] = 'direct';
-        $sub[$row['link']]['subtype'] = 'new_blank';
-    }
+    // $sub = [];
+    // $rows = db_get_all_rows_in_table('tlink', 'name');
+    // foreach ($rows as $row) {
+    //     // Audit //meter en extensiones.
+    //     $sub[$row['link']]['text'] = $row['name'];
+    //     $sub[$row['link']]['id'] = $row['name'];
+    //     $sub[$row['link']]['type'] = 'direct';
+    //     $sub[$row['link']]['subtype'] = 'new_blank';
+    // }
 
-    $menu_godmode['links']['sub'] = $sub;
+    // $menu_godmode['links']['sub'] = $sub;
 }
 
 // Warp Manager.
@@ -593,22 +593,22 @@ if ((bool) check_acl($config['id_user'], 0, 'PM') === true && (bool) $config['en
     $menu_godmode['messages']['sub'] = $sub;
 }
 
-if ($access_console_node === true) {
-    // Module library.
-    if ((bool) check_acl($config['id_user'], 0, 'AR') === true) {
-        $menu_godmode['gmodule_library']['text'] = __('Module library');
-        $menu_godmode['gmodule_library']['id'] = 'god-module_library';
+// if ($access_console_node === true) {
+//     // Module library.
+//     if ((bool) check_acl($config['id_user'], 0, 'AR') === true) {
+//         $menu_godmode['gmodule_library']['text'] = __('Module library');
+//         $menu_godmode['gmodule_library']['id'] = 'god-module_library';
 
-        $sub = [];
-        $sub['godmode/module_library/module_library_view']['text'] = __('View');
-        $sub['godmode/module_library/module_library_view']['id'] = 'View';
+//         $sub = [];
+//         $sub['godmode/module_library/module_library_view']['text'] = __('View');
+//         $sub['godmode/module_library/module_library_view']['id'] = 'View';
 
-        $sub['godmode/module_library/module_library_view&tab=categories']['text'] = __('Categories');
-        $sub['godmode/module_library/module_library_view&tab=categories']['id'] = 'categories';
+//         $sub['godmode/module_library/module_library_view&tab=categories']['text'] = __('Categories');
+//         $sub['godmode/module_library/module_library_view&tab=categories']['id'] = 'categories';
 
-        $menu_godmode['gmodule_library']['sub'] = $sub;
-    }
-}
+//         $menu_godmode['gmodule_library']['sub'] = $sub;
+//     }
+// }
 
 if ($access_console_node === true) {
     // About.

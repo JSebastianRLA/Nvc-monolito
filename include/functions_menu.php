@@ -1006,7 +1006,7 @@ if (is_ajax()) {
                             </tr>
                         </tbody>
                     </table>
-                    <p class="trademark-copyright">Trademark and copyright 2004 - '.date('Y').' Pandora FMS. All rights reserved</p>
+                    <p class="trademark-copyright">Ngeek All rights reserved</p>
                 </div>
                 <div id="tab-database" class="div-scroll">
                     <table class="table-about">

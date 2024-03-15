@@ -679,7 +679,7 @@ if ($login_screen == 'logout') {
     echo '<div class="text_message_alert">';
     echo '<h1>' . __('Logged out') . '</h1>';
     if (empty($config['logout_msg']) === true) {
-        echo '<p>' . __('Your session has ended. Please close your browser window to close this %s session.', get_product_name()) . '</p>';
+        echo '<p>' . __('Your session has ended. Please close your browser window to close this NVC session.') . '</p>';
     } else {
         echo '<p>' . __($config['logout_msg']) . '</p>';
     }

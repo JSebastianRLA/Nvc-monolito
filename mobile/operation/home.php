@@ -60,22 +60,22 @@ class Home
             'icon'      => 'ui-icon-menu-group ui-widget-icon-floatbeginning ui-icon-menu-square',
         ];
 
-        if ((bool) $system->getConfig('legacy_vc', false) === false) {
-            // Show Visual consoles only if new system is enabled.
-            $items['visualmaps'] = [
-                'name'      => __('Visual consoles'),
-                'filename'  => 'visualmaps.php',
-                'menu_item' => true,
-                'icon'      => 'ui-icon-menu-visual_console ui-widget-icon-floatbeginning ui-icon-menu-square',
-            ];
-        }
+        // if ((bool) $system->getConfig('legacy_vc', false) === false) {
+        //     // Show Visual consoles only if new system is enabled.
+        //     $items['visualmaps'] = [
+        //         'name'      => __('Visual consoles'),
+        //         'filename'  => 'visualmaps.php',
+        //         'menu_item' => true,
+        //         'icon'      => 'ui-icon-menu-visual_console ui-widget-icon-floatbeginning ui-icon-menu-square',
+        //     ];
+        // }
 
-        $items['alerts'] = [
-            'name'      => __('Alerts'),
-            'filename'  => 'alerts.php',
-            'menu_item' => true,
-            'icon'      => 'ui-icon-menu-op_alerts ui-widget-icon-floatbeginning ui-icon-menu-square',
-        ];
+        // $items['alerts'] = [
+        //     'name'      => __('Alerts'),
+        //     'filename'  => 'alerts.php',
+        //     'menu_item' => true,
+        //     'icon'      => 'ui-icon-menu-op_alerts ui-widget-icon-floatbeginning ui-icon-menu-square',
+        // ];
 
         $items['agents'] = [
             'name'      => __('Agents'),

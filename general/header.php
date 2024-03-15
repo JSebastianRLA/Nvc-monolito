@@ -449,14 +449,14 @@ echo sprintf('<div id="header_table" class="header_table_%s">', $menuTypeClass);
     $header_logout .= '</a></div>';
 
     if (is_reporting_console_node() === true) {
-        // echo '<div class="header_left">';
-        //     echo '<span class="header_title">';
-        //     echo $config['custom_title_header'];
-        //     echo '</span>';
-        //     echo '<span class="header_subtitle">';
-        //     echo $config['custom_subtitle_header'];
-        //     echo '</span>';
-        // echo '</div>';
+        echo '<div class="header_left">';
+        // echo '<span class="header_title">';
+        // echo $config['custom_title_header'];
+        // echo '</span>';
+        // echo '<span class="header_subtitle">';
+        // echo $config['custom_subtitle_header'];
+        // echo '</span>';
+        echo '</div>';
         echo '<div class="header_center"></div>';
         echo '<div class="header_right">' . $header_support, $header_docu, $header_user, $header_logout . '</div>';
     } else {

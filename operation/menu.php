@@ -238,30 +238,30 @@ if ($access_console_node === true) {
     }
 
     // SNMP Console.
-    $sub2 = [];
-    if (check_acl($config['id_user'], 0, 'AR') || check_acl($config['id_user'], 0, 'AW')) {
-        $sub2['operation/snmpconsole/snmp_view']['text'] = __('SNMP console');
-        $sub2['operation/snmpconsole/snmp_browser']['text'] = __('SNMP browser');
-        enterprise_hook('snmpconsole_submenu');
-    }
+    // $sub2 = [];
+    // if (check_acl($config['id_user'], 0, 'AR') || check_acl($config['id_user'], 0, 'AW')) {
+    //     $sub2['operation/snmpconsole/snmp_view']['text'] = __('SNMP console');
+    //     $sub2['operation/snmpconsole/snmp_browser']['text'] = __('SNMP browser');
+    //     enterprise_hook('snmpconsole_submenu');
+    // }
 
-    if (check_acl($config['id_user'], 0, 'PM')) {
-        $sub2['operation/snmpconsole/snmp_mib_uploader']['text'] = __('MIB uploader');
-    }
+    // if (check_acl($config['id_user'], 0, 'PM')) {
+    //     $sub2['operation/snmpconsole/snmp_mib_uploader']['text'] = __('MIB uploader');
+    // }
 
-    if (check_acl($config['id_user'], 0, 'LW') || check_acl($config['id_user'], 0, 'LM')) {
-        $sub2['godmode/snmpconsole/snmp_filters']['text'] = __('SNMP filters');
-        $sub2['godmode/snmpconsole/snmp_trap_generator']['text'] = __('SNMP trap generator');
-    }
+    // if (check_acl($config['id_user'], 0, 'LW') || check_acl($config['id_user'], 0, 'LM')) {
+    //     $sub2['godmode/snmpconsole/snmp_filters']['text'] = __('SNMP filters');
+    //     $sub2['godmode/snmpconsole/snmp_trap_generator']['text'] = __('SNMP trap generator');
+    // }
 
-    if (empty($sub2) === false) {
-        $sub['snmpconsole']['sub2'] = $sub2;
-        $sub['snmpconsole']['text'] = __('SNMP');
-        $sub['snmpconsole']['id'] = 'SNMP';
-        $sub['snmpconsole']['refr'] = 0;
-        $sub['snmpconsole']['type'] = 'direct';
-        $sub['snmpconsole']['subtype'] = 'nolink';
-    }
+    // if (empty($sub2) === false) {
+    //     $sub['snmpconsole']['sub2'] = $sub2;
+    //     $sub['snmpconsole']['text'] = __('SNMP');
+    //     $sub['snmpconsole']['id'] = 'SNMP';
+    //     $sub['snmpconsole']['refr'] = 0;
+    //     $sub['snmpconsole']['type'] = 'direct';
+    //     $sub['snmpconsole']['subtype'] = 'nolink';
+    // }
 
     // if (check_acl($config['id_user'], 0, 'AR')) {
     //     $sub['operation/cluster/cluster']['text'] = __('Cluster View');
@@ -435,13 +435,13 @@ if ($access_console_node === true) {
         // END GIS Maps.
     }
 
-    if (!empty($sub)) {
-        $menu_operation['network']['text'] = __('Topology maps');
-        $menu_operation['network']['sec2'] = 'operation/agentes/networkmap_list';
-        $menu_operation['network']['refr'] = 0;
-        $menu_operation['network']['id'] = 'oper-networkconsole';
-        $menu_operation['network']['sub'] = $sub;
-    }
+    // if (!empty($sub)) {
+    //     $menu_operation['network']['text'] = __('Topology maps');
+    //     $menu_operation['network']['sec2'] = 'operation/agentes/networkmap_list';
+    //     $menu_operation['network']['refr'] = 0;
+    //     $menu_operation['network']['id'] = 'oper-networkconsole';
+    //     $menu_operation['network']['sub'] = $sub;
+    // }
 
     // End networkview.
     // Reports read.

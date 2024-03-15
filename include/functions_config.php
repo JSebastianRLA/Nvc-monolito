@@ -2679,15 +2679,15 @@ function config_process_config()
     }
 
     if (!isset($config['custom_title_header'])) {
-        config_update_value('custom_title_header', __('Pandora FMS'));
+        config_update_value('custom_title_header', __('NVC'));
     }
 
     if (!isset($config['custom_subtitle_header'])) {
-        config_update_value('custom_subtitle_header', __('the Flexible Monitoring System'));
+        config_update_value('custom_subtitle_header', __('WELCOME TO NGEEK VISIBILITY CENTER'));
     }
 
     if (!isset($config['meta_custom_title_header'])) {
-        config_update_value('meta_custom_title_header', __('PandoraFMS Metaconsole'));
+        config_update_value('meta_custom_title_header', __('NVC Metaconsole'));
     }
 
     if (!isset($config['meta_custom_subtitle_header'])) {
@@ -2695,7 +2695,7 @@ function config_process_config()
     }
 
     if (!isset($config['custom_title1_login'])) {
-        config_update_value('custom_title1_login', __('VISIBILITY AND MONITORING PLATFORM'));
+        config_update_value('custom_title1_login', __('WELCOME TO NGEEK VISIBILITY CENTER'));
     }
 
     if (!isset($config['custom_title2_login'])) {

@@ -520,7 +520,9 @@ echo '</div>';
 
 echo '<div class ="text_banner_login">';
 echo '<div><span class="span1">';
-echo 'WELCOME TO NGEEK VISIBILITY CENTER<br>';
+echo 'WELCOME TO NGEEK VISIBILITY CENTER
+<br>
+<br>';
 echo '</span></div>';
 
 echo '<div><span class="span2">';

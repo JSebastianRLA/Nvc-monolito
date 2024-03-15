@@ -519,11 +519,11 @@ if (file_exists(ENTERPRISE_DIR . '/load_enterprise.php')) {
 echo '</div>';
 
 echo '<div class ="text_banner_login">';
-echo '<div><span class="span123">';
+echo '<div><span class="span1">';
 echo 'WELCOME TO NGEEK VISIBILITY CENTER<br>';
 echo '</span></div>';
 
-echo '<div><span class="span1">';
+echo '<div><span class="span2">';
 if (file_exists(ENTERPRISE_DIR . '/load_enterprise.php')) {
     if ($config['custom_title1_login']) {
         echo io_safe_output($config['custom_title1_login']);

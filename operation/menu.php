@@ -191,8 +191,8 @@ if ($access_console_node === true) {
 
         enterprise_hook('tag_view_submenu');
 
-        $sub2['operation/agentes/alerts_status']['text'] = __('Alert detail');
-        $sub2['operation/agentes/alerts_status']['refr'] = 0;
+        // $sub2['operation/agentes/alerts_status']['text'] = __('Alert detail');
+        // $sub2['operation/agentes/alerts_status']['refr'] = 0;
 
         // $sub2['operation/heatmap']['text'] = __('Heatmap view');
         // $sub2['operation/heatmap']['refr'] = 0;

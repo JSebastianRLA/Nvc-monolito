@@ -959,7 +959,7 @@ if (is_ajax()) {
                                     <img src="'.$image_about.'" alt="logo" width="70%">
                                 </th>
                                 <th style="width: 60%; text-align: left; border: 0px;">
-                                    <h1>'.$product_name.'</h1>
+                                    <h1> NVC Console</h1>
                                     <p><span>'.__('Version').' '.$pandora_version.$lts_name.' - '.(enterprise_installed() ? 'Enterprise' : 'Community').'</span></p>
                                     <p><span>'.__('MR version').'</span> MR'.$config['MR'].'</p>
                                     <p><span>Build</span>'.$build_version.'</p>

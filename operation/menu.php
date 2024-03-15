@@ -584,11 +584,11 @@ if ($access_console_node === true) {
     //     $sub[$javascript]['id'] = 'Acoustic console Modal';
     //     $sub[$javascript]['type'] = 'direct';
 
-    //     echo '<div id="modal-sound" style="display:none;"></div>';
+        echo '<div id="modal-sound" style="display:none;"></div>';
 
-    //     ui_require_javascript_file('pandora_events');
+        ui_require_javascript_file('pandora_events');
 
-    //     $menu_operation['eventos']['sub'] = $sub;
+        $menu_operation['eventos']['sub'] = $sub;
     }
 }
 

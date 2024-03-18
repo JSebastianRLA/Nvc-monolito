@@ -218,7 +218,7 @@ function os_get_name($id_os)
 }
 
 
-function os_get_os($hash=false)
+function os_get_os($hash = false)
 {
     $result = [];
     $op_systems = db_get_all_rows_in_table('tconfig_os');
@@ -257,83 +257,83 @@ function os_transform_url_icon($url_icon)
     switch (basename($url_icon)) {
         case 'android.png':
             $return .= 'android@os.svg';
-        break;
+            break;
 
         case 'so_mac.png':
             $return .= 'apple@os.svg';
-        break;
+            break;
 
         case 'so_cisco.png':
             $return .= 'cisco@os.svg';
-        break;
+            break;
 
         case 'so_aix.png':
             $return .= 'aix@os.svg';
-        break;
+            break;
 
         case 'so_win.png':
             $return .= 'windows@os.svg';
-        break;
+            break;
 
         case 'so_vmware.png':
             $return .= 'vmware@os.svg';
-        break;
+            break;
 
         case 'so_solaris.png':
             $return .= 'solaris@os.svg';
-        break;
+            break;
 
         case 'so_linux.png':
             $return .= 'linux@os.svg';
-        break;
+            break;
 
         case 'so_bsd.png':
             $return .= 'freebsd@os.svg';
-        break;
+            break;
 
         case 'so_cluster.png':
             $return .= 'cluster@os.svg';
-        break;
+            break;
 
         case 'so_other.png':
             $return .= 'other-OS@os.svg';
-        break;
+            break;
 
         case 'so_switch.png':
             $return .= 'switch@os.svg';
-        break;
+            break;
 
         case 'so_mainframe.png':
             $return .= 'mainframe@os.svg';
-        break;
+            break;
         case 'so_f5.png':
-            $return .= 'f5@os.svg';
-        break;
+            $return .= 'f5_so.png';
+            break;
         case 'so_hpux.png':
         case 'server_hpux.png':
             $return .= 'HP@os.svg';
-        break;
+            break;
 
         case 'so_router.png':
         case 'router.png':
             $return .= 'routers@os.svg';
-        break;
+            break;
 
         case 'embedded.png':
             $return .= 'embedded@os.svg';
-        break;
+            break;
 
         case 'network.png':
             $return .= 'network-server@os.svg';
-        break;
+            break;
 
         case 'satellite.png':
             $return .= 'satellite@os.svg';
-        break;
+            break;
 
         default:
             $return = $url_icon;
-        break;
+            break;
     }
 
     return $return;

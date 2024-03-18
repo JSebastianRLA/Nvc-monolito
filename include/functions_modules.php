@@ -4183,20 +4183,20 @@ function get_module_realtime_link_graph($module)
         crc32($module['id_agente_modulo'].$module['nombre'])
     );
 
-    $link_button = '<a href="javascript:winopeng_var(\''.$link.'\',\''.$win_handle.'\', 900, 480)">';
-    $link_button .= html_print_image(
-        'images/prediction@svg.svg',
-        true,
-        [
-            'border' => '0',
-            'alt'    => '',
-            'title'  => __('Realtime SNMP graph'),
-            'class'  => 'invert_filter main_menu_icon',
-        ]
-    );
-    $link_button .= '</a>';
+    // $link_button = '<a href="javascript:winopeng_var(\''.$link.'\',\''.$win_handle.'\', 900, 480)">';
+    // $link_button .= html_print_image(
+    //     'images/prediction@svg.svg',
+    //     true,
+    //     [
+    //         'border' => '0',
+    //         'alt'    => '',
+    //         'title'  => __('Realtime SNMP graph'),
+    //         'class'  => 'invert_filter main_menu_icon',
+    //     ]
+    // );
+    // $link_button .= '</a>';
 
-    return $link_button;
+    // return $link_button;
 }
 
 

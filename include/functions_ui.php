@@ -1960,7 +1960,7 @@ function ui_process_page_head($string, $bitfield)
     $text_subtitle = 'NVC Monitoring Platform';
 
     $output .= "\n\t";
-    $output .= '<title>' . get_product_name() . $text_subtitle . '</title>
+    $output .= '<title>' . $text_subtitle . '</title>
 		<meta http-equiv="expires" content="never" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta http-equiv="Content-Style-Type" content="text/css" />
